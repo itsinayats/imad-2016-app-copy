@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: lightgrey;
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .center {
@@ -18,5 +18,14 @@ body {
 
 .img-medium {
     height: 200px;
+	width:200px;
+	border-radius:100px;
+}
+#panel{
+text-align:center;
+
+}
+td{
+text-align:center;
 }
 
