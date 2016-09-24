@@ -31,10 +31,10 @@ app.get('/article1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 app.get('/article2', function (req, res) {
-  res.send("Article 2 is responded");
+ res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 app.get('/article3', function (req, res) {
-  res.send("Article 3 is responded");
+ res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
 
