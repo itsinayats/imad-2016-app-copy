@@ -30,14 +30,24 @@ app.get('/ui/a.png', function (req, res) {
 app.get('/article1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
+
 app.get('/article2', function (req, res) {
+<<<<<<< HEAD
  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+=======
+ res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+>>>>>>> 27b04f4f9180d1ebc1fc6a560a1d6fa27b47a162
 });
+
 app.get('/article3', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27b04f4f9180d1ebc1fc6a560a1d6fa27b47a162
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
