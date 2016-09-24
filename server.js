@@ -37,7 +37,7 @@ app.get('/article3', function (req, res) {
   res.send("Article 3 is responded");
 });
 
-app.get('/ui/article-one.html', function (req, res) {
+app.get('/article-one.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
