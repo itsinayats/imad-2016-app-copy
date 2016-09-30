@@ -33,4 +33,9 @@ text-align:center;
 td{
 text-align:center;
 }
+#header{
+background:gray;
+height:30px;
+padding-top:10px;
+}
 

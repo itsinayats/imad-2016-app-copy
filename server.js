@@ -28,30 +28,28 @@ app.get('/ui/a.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'a.png'));
 });
 
-
+app.get('/ui/images/a.gif',function(req,res){
+res.sendFile(path.join(__dirname, 'ui/images' , 'a.gif'))
+});
+app.get('/ui/images/fb.jpg',function(req,res){
+res.sendFile(path.join(__dirname, 'ui/images' , 'fb.jpg'))
+});
+app.get('/ui/images/gl.jpg',function(req,res){
+res.sendFile(path.join(__dirname, 'ui/images' , 'gl.jpg'))
+});
 
 app.get('/:articleName', function (req, res) {
- // res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
  var articleName=req.params.articleName;
 res.send(createTemplate(articles[articleName]));
  });
-app.get('/articleTwo', function (req, res) {
-  //res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-  res.send(createTemplate(articleTwo));
-});
-app.get('/articleThree', function (req, res) {
-// res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-res.send(createTemplate(articleThree));
-});
-
 
 /* CREATING TEMPLATE*/
 
 //ARTICLE 1
 var articles={
-    'articleOne':{
+    articleOne:{
 	title:'Article One',
-	heading:'Article 1',
+	heading:'Article ONE',
 	date:'dec 12,2016',
 	content:`
 	 <p>
@@ -64,6 +62,7 @@ var articles={
 	  By doing so, they get exposed to real business problem statements,
 	  experience accelerated learning and get credentials to share during future job pursuit. 
 	  </p>
+	  <center><img src="ui/images/a.gif"></center>
 	   <p>
 	    To provide a situation to the students where in they get to develop business 
 	  oriented applications using latest technologies within aggressive schedules. 
@@ -77,10 +76,10 @@ var articles={
 	
 
 },
-
-    'articleTwo':{
+//ARTICLE 2
+    articleTwo:{
 	title:'Article Two',
-	heading:'Article 2',
+	heading:'Article TWO',
 	date:'dec 13,2016',
 	content:`
 	 <p>
@@ -93,6 +92,7 @@ var articles={
 	  By doing so, they get exposed to real business problem statements,
 	  experience accelerated learning and get credentials to share during future job pursuit. 
 	  </p>
+	  <center><img src="ui/images/gl.jpg"></center>
 	   <p>
 	    To provide a situation to the students where in they get to develop business 
 	  oriented applications using latest technologies within aggressive schedules. 
@@ -107,7 +107,7 @@ var articles={
 
 },
  //ARTICLE 3
-    'articleThree':{
+    articleThree:{
 	title:'Article Three',
 	heading:'Article Three',
 	date:'dec 15,2016',
@@ -122,6 +122,7 @@ var articles={
 	  By doing so, they get exposed to real business problem statements,
 	  experience accelerated learning and get credentials to share during future job pursuit. 
 	  </p>
+	  <center><img src="ui/images/fb.jpg"></center>
 	   <p>
 	    To provide a situation to the students where in they get to develop business 
 	  oriented applications using latest technologies within aggressive schedules. 
@@ -150,7 +151,7 @@ var template= `
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 <body>
-<div>
+<div id="header">
 <a href="/">HOME</a>|<a href="articleOne">Article1</a>|<a href="articleTwo">Article2</a>|<a href="articleThree">Article3</a>
 </div>
 <hr>
