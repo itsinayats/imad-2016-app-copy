@@ -1,14 +1,17 @@
 <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="ui/favicon.ico">
+		
     </head>
     <body>
+	 <script type="text/javascript" src="/ui/main.js"></script>
 	<div id="header">
 <a href="/">HOME</a>|<a href="articleOne">Article1</a>|<a href="articleTwo">Article2</a>|<a href="articleThree">Article3</a>
 </div>
 <hr>
         <div class="center">
-          <img src="ui/images/inayat.jpg" class="img-medium"/>
+          <img id="imgi" src="ui/images/inayat.jpg" class="img-medium"/>
         </div>
         <br>
 		<div id="panel">
@@ -28,11 +31,17 @@
 		</table>
 		
 		<table>
+		</center>
 		<center>
+		<input type="button" onclick="show_address()" value="Click to know my Address">
+
+		<span style="font-size:30px" id="address"></span>
+		
+		</center>
+		
 		
 	
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
+       
 &copyinayat
     </body>
 	</html>
