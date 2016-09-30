@@ -30,9 +30,10 @@ app.get('/ui/a.png', function (req, res) {
 
 
 
-app.get('/articleOne', function (req, res) {
+app.get('/:articleName', function (req, res) {
  // res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-res.send(createTemplate(articleOne));
+ var articleName=req.params.articleName;
+res.send(createTemplate(articles[articleName]));
  });
 app.get('/articleTwo', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
@@ -47,7 +48,8 @@ res.send(createTemplate(articleThree));
 /* CREATING TEMPLATE*/
 
 //ARTICLE 1
- var articleOne={
+var articles={
+    'articleOne':{
 	title:'Article One',
 	heading:'Article 1',
 	date:'dec 12,2016',
@@ -74,9 +76,9 @@ res.send(createTemplate(articleThree));
 	   </p>   `
 	
 
-};
+},
 
-var articleTwo={
+    'articleTwo':{
 	title:'Article Two',
 	heading:'Article 2',
 	date:'dec 13,2016',
@@ -103,9 +105,9 @@ var articleTwo={
 	   </p>   `
 	
 
-};
-//ARTICLE 3
-var articleThree={
+},
+ //ARTICLE 3
+    'articleThree':{
 	title:'Article Three',
 	heading:'Article Three',
 	date:'dec 15,2016',
@@ -132,8 +134,8 @@ var articleThree={
 	   </p>   `
 	
 
+}
 };
-
 //TEMPLATE CODE
 function createTemplate(data){
 var title=data.title;
