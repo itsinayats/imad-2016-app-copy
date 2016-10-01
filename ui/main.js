@@ -27,9 +27,18 @@ img.onload=function(){
 setInterval(makebig,50);
 
 };
-
 */
 
+//Click counter
+
+var button=document.getElementById('button');
+var counterTxt=document.getElementById('counterTxt');
+var counter=0;
+button.onclick=function(){
+counter++;
+counterTxt.innerHTML= counter.toString();
+
+}
 
 
 
