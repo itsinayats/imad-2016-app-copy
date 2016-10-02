@@ -14,11 +14,8 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 app.get('/ui/fevicon.ico', function (req, res) {
-  res.sendFile(path.join(__dirname, '/ui', 'favicon.ico'));
+  res.sendFile(path.join(__dirname, 'ui', 'favicon.ico'));
 });
-
-
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
