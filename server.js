@@ -56,15 +56,22 @@ res.send(counter.toString());
 });
 
 
+ //CODE FOR GETTING VALUES
+var names=[];
+//app.get('/submit_name/:name',function(req,res){
+app.get('/submit_name',function(req,res){
+//var name=req.params.name;   //way 1
+var name=req.query.name;
+names.push(name);
+res.send(JSON.stringify(names)); 
+});
 
 
 
-app.get('/:articleName', function (req, res) {
- var articleName=req.params.articleName;
-res.send(createTemplate(articles[articleName]));
- });
 
- 
+
+
+
 app.get('/:articleName', function (req, res) {
  var articleName=req.params.articleName;
 res.send(createTemplate(articles[articleName]));
