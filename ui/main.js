@@ -74,7 +74,7 @@ if(request.status==200){
 document.getElementById('counterTxt').innerHTML=this.responseText;
 }
 };
-request.open('GET',"https://http://itsinayats.imad.hasura-app.io//counter",true);
+request.open('GET',"https://http://itsinayats.imad.hasura-app.io/counter",true);
 request.send();
 }
 
