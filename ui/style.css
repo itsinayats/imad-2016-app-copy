@@ -62,4 +62,7 @@ input[type="button"]:hover {
     cursor: pointer;
 }
 
-in
+#header a {
+    color: #673AB7;
+    font-size: x-large;
+}
