@@ -49,3 +49,7 @@ padding: 5px 5px 5px 5px;
     text-decoration: none;
     /* border-bottom-color: #9C27B0; */
 }
+a {
+    text-decoration: none;
+    color: #FF5722;
+}
