@@ -66,3 +66,6 @@ input[type="button"]:hover {
     color: #673AB7;
     font-size: x-large;
 }
+#header a:hover {
+    text-decoration: underline;
+}
