@@ -53,3 +53,8 @@ a {
     text-decoration: none;
     color: #FF5722;
 }
+input[type="button"] {
+    font-family: sans-serif;
+    border-radius: 5px;
+    border-style: ridge;
+}
