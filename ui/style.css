@@ -44,3 +44,8 @@ height:auto;
 padding: 5px 5px 5px 5px;
     
 }
+#namelist {
+    background: darkcyan;
+    text-decoration: none;
+    /* border-bottom-color: #9C27B0; */
+}
