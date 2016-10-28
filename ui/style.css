@@ -58,3 +58,8 @@ input[type="button"] {
     border-radius: 5px;
     border-style: ridge;
 }
+input[type="button"]:hover {
+    cursor: pointer;
+}
+
+in
