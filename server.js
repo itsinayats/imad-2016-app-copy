@@ -119,7 +119,20 @@ res.send(JSON.stringify(names));
 
 
 app.get('/articles/:articleName', function (req, res) {
- var articleName=req.params.articleName;
+// var articleName=req.params.articleName;
+pool.query("Select * from article where title="+req.params.articleName,function(err,result){
+    if(err){
+        
+          res.status(500).send(err.toString()) ;
+          }
+         else
+        {
+            if(res.rows.length)===0){
+                res.status(400).send('ARTICLE NOT FOUND');
+            }
+          res.send(JSON.stringify(res.rows));  
+        }
+});
 res.send(createTemplate(articles[articleName]));
  });
 
