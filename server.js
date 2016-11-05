@@ -5,6 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
 app.get('/', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -24,16 +25,22 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/images/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'madi.png'));
-});
 app.get('/ui/images/inayat.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'inayat.jpg'));
 });
-
-app.get('/ui/a.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'a.png'));
+app.get('/ui/images/fb.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'fb.png'));
 });
+app.get('/ui/images/gp.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'gp.png'));
+});
+app.get('/ui/images/lkn.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'lkn.png'));
+});
+app.get('/ui/images/twitter.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'twitter.png'));
+});
+
 
 app.get('/ui/images/a.gif',function(req,res){
 res.sendFile(path.join(__dirname, 'ui/images' , 'a.gif'))
@@ -45,11 +52,17 @@ app.get('/ui/images/gl.jpg',function(req,res){
 res.sendFile(path.join(__dirname, 'ui/images' , 'gl.jpg'))
 });
 
+app.get('/ui/login.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.php'));
+});
+
+
 
 var counter=0;
 app.get('/counter',function(req, res){
 counter = counter + 1;
 res.send(counter.toString());
+
 });
 
 
@@ -62,6 +75,7 @@ var name=req.query.name;
 names.push(name);
 res.send(JSON.stringify(names)); 
 });
+
 
 
 
@@ -180,14 +194,20 @@ var template= `
    <html>
   <head>
 <title>${title}</title>
+
 <link href="/ui/style.css" rel="stylesheet" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 <body>
 <div id="header">
-<a href="/">HOME</a>|<a href="articleOne">Article1</a>|<a href="articleTwo">Article2</a>|<a href="articleThree">Article3</a>
+<span class="menu"><a href="/">HOME</a>|</span>
+<span class="menu"><a href="articleOne">Article1</a>|</span>
+<span class="menu"><a href="articleTwo">Article2</a>|</span>
+<span class="menu"><a href="articleThree">Article3</a>|</span>
+<span class="menu"><a href="counter">TestCounter</a>|</span>
 </div>
 <hr>
+<div id="container">
 
 <h3>
 ${heading}
@@ -198,6 +218,11 @@ ${heading}
 	  <div>
 	  ${content}
 	  </div>
+	  
+	  </div>
+<div id="footer">
+&copyinayat
+ </div>
 </body>
 </html>
 
@@ -205,6 +230,7 @@ ${heading}
 
 return template;
 }
+
 
 
 

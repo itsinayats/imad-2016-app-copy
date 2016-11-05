@@ -74,7 +74,8 @@ if(request.status==200){
 document.getElementById('counterTxt').innerHTML=this.responseText;
 }
 };
-request.open('GET',"http://itsinayats.imad.hasura-app.io/counter",true);
+//request.open('GET',"http://itsinayats.imad.hasura-app.io/counter",true);
+request.open('GET',"http://localhost:8080/counter",true);
 request.send();
 }
 
@@ -100,7 +101,8 @@ ul.innerHTML=list;
 };
 var nameInput=document.getElementById('name');
 var name=nameInput.value;
-request.open('GET','http://itsinayats.imad.hasura-app.io/submit_name?name='+name,true);
+//request.open('GET','http://itsinayats.imad.hasura-app.io/submit_name?name='+name,true);
+request.open('GET','http://localhost:8080/submit_name?name='+name,true);
 request.send(null);
 
 };

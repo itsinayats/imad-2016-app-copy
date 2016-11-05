@@ -1,12 +1,107 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 10px;
-	margin:0 auto;
-	color:grey;
-	border-style:solid;
-	padding:20px;
+    background-color: #b02768;
 }
+* {
+	 padding: 0;
+	margin: 0;
+	
+}
+
+#header{
+   top:0;
+   width:100%;
+   height: 40px;
+   background:#3c4446;
+   position:fixed;
+   z-index:1;
+   padding-top:15px;
+}
+
+#row-first {
+    padding:20px;
+    width: 100%;
+    height: 200px;
+
+}
+#dp {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+}
+#namearea {
+    margin-left: 210px;
+    margin-top: 80px;
+    position: absolute;
+    font-size: 30px;
+}
+#container{
+padding:20px;
+margin-top:80px;
+
+}
+
+
+.heading{
+font-size: 30px;
+    color: #FF9800;
+}
+
+.content{
+    color: white;
+    font-size: 20px;
+}
+.sub-content{
+font-size:20px;
+color:silver;
+}
+.menu{
+font-size:25px;
+font-weight:bolder;
+
+}
+.menu a{
+text-decoration:none;
+color:silver;
+}
+.menu a:hover{
+text-decoration:underline;
+}
+#footer{
+    background-color:gray;
+    border-top: 1px solid #d6d6d6;
+    padding: 50px 50px 40px;
+    z-index: 10;
+    position: relative;
+	margin-top:10px;
+	width:100%;
+	margin-left:-20px;
+	
+
+}
+
+#demos{
+width:100%;
+padding:2px;
+font-size:20px;
+}
+.btn{
+width:100px;
+height:40px;
+background-color:#009688;
+font-size:18px;
+}
+.btnname{
+width:150px;
+height:35px;
+background-color:#009688;
+font-size:18px;
+color:silver;
+}
+
+
+
 
 .center {
     text-align: center;
@@ -32,9 +127,11 @@ text-align:center;
 td{
 text-align:center;
 }
-#header{
-background:gray;
-height:auto;
-padding: 5px 5px 5px 5px;
+
+
+#icn{
+width:50px;
+height:50px;
+border-radius:25px
 }
 

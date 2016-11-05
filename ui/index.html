@@ -2,61 +2,105 @@
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
 		<link rel="shortcut icon" href="ui/favicon.ico">
-		
-    </head>
-    <body>
-	
-	<div id="header">
-<a href="/">HOME</a>|
-<a href="articleOne">Article1</a>|
-<a href="articleTwo">Article2</a>|
-<a href="articleThree">Article3</a>|
-<a href="counter">TestCounter</a>
+<style>
+
+</style>
+<title>Profile</title>
+</head>
+
+
+
+<body>
+<div id="header">
+<span class="menu"><a href="/">HOME</a>|</span>
+<span class="menu"><a href="articleOne">Article1</a>|</span>
+<span class="menu"><a href="articleTwo">Article2</a>|</span>
+<span class="menu"><a href="articleThree">Article3</a>|</span>
+<span class="menu"><a href="counter">TestCounter</a>|</span>
+</div>
+<div id="container">
+
+<div id="row-first">   
+<div id="dp">
+<img class="img-medium" src="ui/images/inayat.JPG">
+</div>
+<div id="namearea">
+<span style="color:silver">
+&nbsp&nbsp&nbsp&nbsp&nbspINAYAT HUSSAIN<br>
+(Java/PHP Developer)
+</span><br>
+</div>
 </div>
 <hr>
-        <div class="center">
-          <img id="imgi" src="/ui/images/inayat.jpg" class="img-medium"/>
-        </div>
-        <br>
-		<div id="panel">
-        <div class="center text-big bold">
-          Inayat Hussain
-        </div>
-	<center>
-	    <table>
-		<tr><td><b>Computer Science And Engineering</b><br>R.D.Engineering College,Ghaziabad<td><tr>
-		</div>
-		<table>
-		<tr><td><b>!!A Hard work definitely makes you worldwinning,Never give up and keep trying!!!!</b></td></tr>
-		<tr><td><b><br>Website:</b><a href="http://itsinayat.blogspot.in">itsinayat.blogspot.in</a></td></tr>
-		<tr><td><b>Email:</b>inayat.rdec@gmail.com</td></tr>
-		<tr><td><b>Facebook:</b><a href="http://fb.me/inayat.asdf">fb.me/inayat.asdf</a></td></tr>
-		<tr><td><b>Twitter:</b><a href="http://twitter.com/inayatasdf">twitter.com/inayatasdf</a></td></tr>
-		<tr><td><b>Contact</b>+919311982278</td></tr>
-		</table>
-		
-		<table>
-		</center>
-		
-		<center>
-		<input type="button" onclick="show_address()" value="Click to know my Address">
 
-		<span style="font-size:30px" id="address"></span>
-		
-		</center>
-<hr>	
-<h3>Website Hit counter</h3>
-<span id="count">0</span>-HITS<hr>
-You <input type="button" id="ctrbtn" value="clicked Me">-<span id="counterTxt">0</span>Times<hr>
 
-<input type="text" id="name" placeholder="name"></input><input type="submit" id="submitbtn" value="SUBMIT"></input>
-<ul id="namelist">
-</ul>
+<span style="color:silver">
+
+</span>
+<br>
+<br>
+<span class="heading"><u>Academics</u></span><br>
+<span class="content">Schoolings: </span><span class="sub-content">Kendriya Vidyalaya,R.A.U. PUSA</span><br>
+<span class="content">College: </span><span class="sub-content">R.D. ENGG COLLEGE,(AKTU,LUCKNOW)</span><br><br>
+
+
+<span class="heading"><u>Technicals</u></span><br>
+<span class="content">Languages: </span><span class="sub-content">C,C++,JAVA</span><br>
+<span class="content">JAVA Technology: </span><span class="sub-content">Core-java,J2EE, Servlet, Jsp,Struts2</span><br>
+<span class="content">Web Technologies: </span><span class="sub-content">HTML,PHP,BOOTSTRAP,CSS,JAVASCRIPT</span><br>
+<span class="content">Server: </span><span class="sub-content">APACHE TOMCAT,</span><br>
+<span class="content">DataBase: </span><span class="sub-content">MySqlWorkbench,PhpMyAdmin</span><br>
+<span class="content">IDE's Work Upon: </span><span class="sub-content">Eclipse,NetBeans</span><br><br>
+
+<span class="heading"><u>Extras</u></span><br>
+<span class="content">Memeber of <a href="http://thesaviours.org">The Saviours </a>(NGO)</span><br>
+<span class="content">College Representative at RDEC of <a href="http://ecell.in">E-Cell IIT Mumbai</a></span><br>
+
+<br>
+<span class="heading">Personal</span>
+<br>
+<span class="content">Email:-</span><span class="sub-content">Inayat.rdec@gmail.com</span><br>
+<span class="content">Contact-</span><span class="sub-content">+919311982278</span><br><br>
+
+<br>
+<span class="heading"><u>Social</u></span><br>
+<br>
+<table>
+<tr>
+<td> <a href="http://facebook.com/inayat.asdf"><img id="icn" src="ui/images/fb.png"></a></td>
+
+<td> <a href="http://twitter.com/inayatasdf"><img id="icn" src="ui/images/twitter.png"></a></td>
+
+<td> <a href="https://in.linkedin.com/in/inayat-hussain-a456b6a7"><img id="icn" src="ui/images/lkn.png"></a></td>
+
+ <td><a href="https://plus.google.com/112767583417662408556"><img id="icn" src="ui/images/gp.png"></a></td>
+</tr>
+ <table>
+ 
+<span class="sub-content">& Don't Forget to visit:- <a href="http://itsinayat.blogspot.in"> http://itsinayat.blogspot.in</a></span><br>
+
+</div>
+<br>
+<hr>
+
+
+ <br>
+<table id="demos">
+<tr>
+<td>You <input class="btn" type="button" id="ctrbtn" value="clicked Me">-<span id="counterTxt">0</span>Times</td>
+<td><input class="btnname" id="name" type="text" placeholder="Enter Name"></input><input class="btn" type="submit" id="submitbtn" value="SUBMIT"></input>
+<ul id="namelist"></ul>
+</td>
+<tr>
+<table>
+<div id="footer">
+Copyright&copyinayat
+ </div>
 
 
 
 
  <script type="text/javascript" src="/ui/main.js"></script>
- <br> <br>&copyinayat
+
     </body>
 	</html>
