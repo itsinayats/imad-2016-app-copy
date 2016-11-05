@@ -1,15 +1,6 @@
 body {
     font-family: sans-serif;
-<<<<<<< HEAD
     background-color: #b02768;
-=======
-    background-color: #673AB7;
-    margin-top: 10px;
-	margin:0 auto;
-	color:rgb(234, 230, 230);
-	border-style:solid;
-	padding:20px;
->>>>>>> 66346e4e374ede17e93c44c85ceac1b3e6d71d6e
 }
 * {
 	 padding: 0;
@@ -136,49 +127,11 @@ text-align:center;
 td{
 text-align:center;
 }
-<<<<<<< HEAD
 
 
 #icn{
 width:50px;
 height:50px;
 border-radius:25px
-=======
-#header{
-background:#09d84a;
-height:auto;
-padding: 5px 5px 5px 5px;
->>>>>>> 66346e4e374ede17e93c44c85ceac1b3e6d71d6e
 }
 
-#footer{
-background:#09d84a;
-height:auto;
-padding: 5px 5px 5px 5px;
-    
-}
-#namelist {
-    background: darkcyan;
-    text-decoration: none;
-    /* border-bottom-color: #9C27B0; */
-}
-a {
-    text-decoration: none;
-    color: #FF5722;
-}
-input[type="button"] {
-    font-family: sans-serif;
-    border-radius: 5px;
-    border-style: ridge;
-}
-input[type="button"]:hover {
-    cursor: pointer;
-}
-
-#header a {
-    color: #673AB7;
-    font-size: x-large;
-}
-#header a:hover {
-    text-decoration: underline;
-}
