@@ -120,7 +120,7 @@ res.send(JSON.stringify(names));
 
 app.get('/articles/:articleName', function (req, res) {
 // var articleName=req.params.articleName;
-pool.query("Select * from article where title='"+req.params.articleName+"'",function(err,result){
+pool.query("Select * from article where title='" + req.params.articleName + "'", function(err,result){
     if(err){
           res.status(500).send(err.toString()) ;
           }
@@ -128,14 +128,14 @@ pool.query("Select * from article where title='"+req.params.articleName+"'",func
          else
          
         {
-        if(result.rows.length)===0)
+        if(result.rows.length===0)
         {
                 res.status(400).send('ARTICLE NOT FOUND');
         }
             else
             {
         var  articleData=result.rows[0];
-     res.send(createTemplate(articleData);
+     res.send(createTemplate(articleData));
              }
             
         }
