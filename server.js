@@ -124,21 +124,16 @@ pool.query("Select * from article where title='" + req.params.articleName + "'",
     if(err){
           res.status(500).send(err.toString()) ;
           }
-          
-         else
-         
-        {
-        if(result.rows.length===0)
-        {
+     else{
+            if(result.rows.length===0)
+             {
                 res.status(400).send('ARTICLE NOT FOUND');
-        }
-            else
-            {
-        var  articleData=result.rows[0];
-     res.send(createTemplate(articleData));
              }
-            
-        }
+                 else{
+                  var  articleData=result.rows[0];
+                  res.send(createTemplate(articleData));
+                     }
+             }
 });
 
  });
