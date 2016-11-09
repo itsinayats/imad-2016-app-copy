@@ -3,14 +3,8 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
 
-
-var pool = new Pool({
-  user: 'foo',
-  password: 'bar',
-  host: 'localhost',
-  database: 'my_db',
- port
-});
+var app = express();
+app.use(morgan('combined'));
 
 
 
@@ -24,9 +18,6 @@ var config = {
 
 
 
-
-var app = express();
-app.use(morgan('combined'));
 
 
 app.get('/', function (req, res) {
