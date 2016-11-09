@@ -116,8 +116,6 @@ res.send(JSON.stringify(names));
 
 
 
-
-
 app.get('/articles/:articleName', function (req, res) {
 // var articleName=req.params.articleName;
 pool.query("Select * from article where title='" + req.params.articleName + "'", function(err,result){
