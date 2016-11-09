@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: #b02768;
-    margin top:110px;
+    margin-top:50px;
 }
 
 
@@ -17,55 +17,6 @@ font-size: 30px;
 .sub-content{
 font-size:20px;
 color:silver;
-}
-
-
-
-#demos{
-width:100%;
-padding:2px;
-font-size:20px;
-}
-.btn{
-width:100px;
-height:40px;
-background-color:#009688;
-font-size:18px;
-}
-.btnname{
-width:150px;
-height:35px;
-background-color:#009688;
-font-size:18px;
-color:silver;
-}
-
-
-
-
-.center {
-    text-align: center;
-}
-
-.text-big {
-    font-size: 300%;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.img-medium {
-    height: 200px;
-	width:200px;
-	border-radius:100px;
-}
-#panel{
-text-align:center;
-
-}
-td{
-text-align:center;
 }
 
 
