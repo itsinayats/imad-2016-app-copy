@@ -64,6 +64,10 @@ app.get('/ui/css/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css', 'bootstrap.css'));  //bootstrap
 });
 
+app.get('/ui/js/bootstrap.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'bootstrap.min.js'));  //bootstrap
+});
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
