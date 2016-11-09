@@ -9,7 +9,7 @@ app.use(morgan('combined'));
 
 
 var config = {
-  host: 'db.imad.hasura-app.io,
+  host: 'db.imad.hasura-app.io',
   user: 'itsinayats',
   password: process.env.DB_PASSWORD,
   database: 'itsinayats',
