@@ -28,14 +28,14 @@ res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 
 var pool=new Pool(config);
 app.get('/test-db', function (req, res) {
-    pool.query('select * from user',function(err,res){
+    pool.query('select * from user',function(err,result){
         if(err)
         {
           res.status(500).send(err.toString()) ;
         }
         else
         {
-          res.send(JSON.stringify(res.rows));  
+          result.send(JSON.stringify(res.rows));  
         }
     });
  
