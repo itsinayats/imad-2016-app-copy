@@ -232,6 +232,7 @@ var articles={
 
 }
 };
+
 //TEMPLATE CODE
 function createTemplate(data){
 var title=data.title;
@@ -261,7 +262,7 @@ var template= `
 ${heading}
 </h3>
       <div>
-	  ${date}
+	  ${date.toDateString()}
 	  </div>
 	  <div>
 	  ${content}
