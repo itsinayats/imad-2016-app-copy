@@ -311,7 +311,7 @@ var template= `
       width: 100%;
   }
   .s {
-     width:10%; 
+     width:17%; 
   }
 
  .affix + .container-fluid {
