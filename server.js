@@ -340,16 +340,7 @@ var template= `
                             <div class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
                                            <li id="Home"><a class="bold" href="/">HOME</a></li>
-                                               <li class="dropdown">
-                                                    <a class="dropdown-toggle bold" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
-                                                                       <ul class="dropdown-menu">
-                                                                            <li><a class="bold" href="#section1">Academics</a></li>
-                                                                            <li><a class="bold"  href="#section2">Technical</a></li>
-                                                                            <li><a class="bold"  href="#section3">Extra activity</a></li>
-                                                                            <li><a class="bold"  href="#section4">personal</a></li>
-                                                                            <li><a class="bold"  href="#section5">Social</a></li>
-                                                                       </ul>
-                                                 </li>
+                                           <li><a class="bold"  href="/">ABOUT</a>
                                            <li><a class="bold"  href="#section6">LOGIN</a></li>
                                            <li><a class="bold"  href="#section7">REGISTER</a></li>
                                            <li><a class="bold"  href="/blog">BLOG</a></li>
