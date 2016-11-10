@@ -359,9 +359,9 @@ var template= `
 	<div class="row">
 	  <!--left-->
       <div class="col-md-3" id="leftCol">
-      <ul class="nav nav-stacked affix s" style="position:fixed">
+      <ul class="nav nav-stacked affix" style="position:fixed">
       <br>  <br>  <br>  <br>
-      <button class="btn btn-info btn-lg affix btn-block" data-toggle="collapse" data-target="#demo" data-offset="100"><h3>Categories</h3></button>
+      <button class="btn btn-info btn-lg affix " data-toggle="collapse" data-target="#demo" data-offset="100"><h3>Categories</h3></button>
           <li><a href="#sec0">Section 0</a></li>
           <li><a href="#sec1">Section 1</a></li>
           <li><a href="#sec2">Section 2</a></li>
