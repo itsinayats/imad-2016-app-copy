@@ -353,7 +353,7 @@ var template= `
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search Blog..">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button" style="z-index:1">
+          <button class="btn btn-default" type="button" style="z-index:-1">
             <span class="glyphicon glyphicon-search"></span>
           </button>
         </span>
