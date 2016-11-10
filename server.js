@@ -376,7 +376,7 @@ var template= `
 	<div class="navbar-header">
       <div class="col-md-3" id="leftCol">
       
-        <ul class="nav nav-stacked" id="sidebar">
+        <ul class="nav nav-stacked">
          <h3>CATEGORIES</h3>
           <li><a href="#sec0">Section A</a></li>
           <li><a href="#sec1">Section 1</a></li>
