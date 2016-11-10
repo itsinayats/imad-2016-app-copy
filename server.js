@@ -373,7 +373,7 @@ var template= `
 	<div class="row">
 	
 	<!--left-->
-	<div class="navbar-header">
+	<div class="navbar-header" style="position:fixed">
       <div class="col-md-3" id="leftCol">
       
         <ul class="nav nav-stacked">
