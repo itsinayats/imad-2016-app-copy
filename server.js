@@ -316,36 +316,33 @@ var template= `
 </head>
 <body>
  <!--NAVBAR STARTS  -->
-       <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="0" style="z-index:1">
-            <div class="container-fluid">
-                     <button type="button" class="navbar-toggle"  data-toggle="collapse"  data-target=".navbar-collapse">
-                          <span class="sr-only">Toggle Navigation</span>
-                           <span class="icon-bar"></span>
-                           <span class="icon-bar"></span>
-                           <span class="icon-bar"></span>
-                      </button>
-        <div class="input-group navbar-brand" style="position:absolute;width:50px">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button" >
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
-
-                            <div class="navbar-collapse collapse">
-                                    <ul class="nav navbar-nav navbar-right">
-                                           <li id="Home"><a class="bold" href="/">HOME</a></li>
-                                           <li><a class="bold"  href="/">ABOUT</a>
-                                           <li><a class="bold"  href="#section6">LOGIN</a></li>
-                                           <li><a class="bold"  href="#section7">REGISTER</a></li>
-                                           <li><a class="bold"  href="/blog">BLOG</a></li>
-
-
-                                        </ul>
-                            </div>
-               </div>
-        </nav>
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Company Name</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+        <div class="col-sm-3 col-md-3 pull-right">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>        
+    </div>
+</nav>
   <!--NAVBAR ENDS  -->
 
 <div class="container-fluid">
