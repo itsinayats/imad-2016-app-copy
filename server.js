@@ -360,8 +360,8 @@ var template= `
 	  <!--left-->
       <div class="col-md-3" id="leftCol">
       <div class="nav nav-stacked affix s" style="position:fixed">
-      <br><br><br>
-      <button class=" btn btn-lg btn-info" data-toggle="collapse" data-target="#cat" style="width:320px;text-align:center;">Categories</button>
+   
+      <button class=" btn btn-lg btn-info" data-toggle="collapse" data-target="#cat" style="width:320px;text-align:center;margin-top:25px">Categories</button>
       <div id="cat" class="collapse"z-index:1">
   <ul class="list-group" style="width:320px;">
   <li class="list-group-item">New <span class="badge">12</span></li>
