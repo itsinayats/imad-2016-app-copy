@@ -361,13 +361,14 @@ var template= `
       <div class="col-md-3" id="leftCol">
       <ul class="nav nav-stacked affix s" style="position:fixed">
       <br>  <br>  <br>  <br>
-      <button class="btn btn-lg" data-toggle="collapse" data-target="#demo">Categories</button>
-        <li><h2>Categories</h2></li>
+      <button class="btn btn-lg" data-toggle="collapse" data-target="#cat">Categories</button>
+      <div id="cat">
           <li><a href="#sec0">Section 0</a></li>
           <li><a href="#sec1">Section 1</a></li>
           <li><a href="#sec2">Section 2</a></li>
           <li><a href="#sec3">Section 3</a></li>
           <li><a href="#sec4">Section 4</a></li>
+        </div>
         </ul>
       </div><!--/left-->
     
