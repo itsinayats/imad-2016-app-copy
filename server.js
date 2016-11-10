@@ -326,6 +326,40 @@ var template= `
   </style>
 </head>
 <body>
+ <!--NAVBAR STARTS  -->
+       <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100" style="z-index:1">
+            <div class="container-fluid">
+                     <button type="button" class="navbar-toggle"  data-toggle="collapse"  data-target=".navbar-collapse">
+                          <span class="sr-only">Toggle Navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                      </button>
+            <a href="/" class="navbar-brand">INAYAT HUSSAIN</a>
+
+                            <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                           <li id="Home"><a class="bold" href="/">HOME</a></li>
+                                               <li class="dropdown">
+                                                    <a class="dropdown-toggle bold" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
+                                                                       <ul class="dropdown-menu">
+                                                                            <li><a class="bold" href="#section1">Academics</a></li>
+                                                                            <li><a class="bold"  href="#section2">Technical</a></li>
+                                                                            <li><a class="bold"  href="#section3">Extra activity</a></li>
+                                                                            <li><a class="bold"  href="#section4">personal</a></li>
+                                                                            <li><a class="bold"  href="#section5">Social</a></li>
+                                                                       </ul>
+                                                 </li>
+                                           <li><a class="bold"  href="#section6">LOGIN</a></li>
+                                           <li><a class="bold"  href="#section7">REGISTER</a></li>
+                                           <li><a class="bold"  href="/blog">BLOG</a></li>
+
+
+                                        </ul>
+                            </div>
+               </div>
+        </nav>
+  <!--NAVBAR ENDS  -->
 
 <div class="container-fluid">
   <div class="row content">
