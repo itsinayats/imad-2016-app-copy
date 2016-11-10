@@ -319,8 +319,8 @@ var template= `
   border-right-width:5px;
 }
 
-  		#leftCol{
-  		    padding-top:20px;
+  		#sidebar{
+  		    
   		    text-align:center;
   		    z-index:1;
   
