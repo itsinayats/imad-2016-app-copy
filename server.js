@@ -377,10 +377,10 @@ var template= `
     
       <h4><small>RECENT POSTS</small></h4>
       <hr>
-      <h2>TITLE OF CONTENT</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h2>${heading}</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, ${date}.</h5>
       <h5><span class="label label-success">LABEL</span></h5><br>
-      <p>CONTENTS O ARTICLE</p>
+      <p>${content}</p>
       <hr>
 
       <h4>Leave a Comment:</h4>
