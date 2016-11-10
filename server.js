@@ -311,7 +311,7 @@ var template= `
       width: 100%;
   }
   .s {
-     width:17%; 
+     width:20%; 
   }
 
  .affix + .container-fluid {
@@ -358,7 +358,7 @@ var template= `
    <div class="container-fluid">
 	<div class="row">
 	  <!--left-->
-      <div class="col-md-2" id="leftCol">
+      <div class="col-md-3" id="leftCol">
       <ul class="nav nav-stacked affix s" style="position:fixed">
       <br>  <br>  <br>  <br>  <br>
         <li><h2>Categories</h2></li>
@@ -370,7 +370,7 @@ var template= `
         </ul>
       </div><!--/left-->
     
-      <div class="col-sm-10">
+      <div class="col-sm-9">
     
       <h4><small>RECENT POSTS</small></h4>
       <hr>
