@@ -325,10 +325,10 @@ var template= `
             <span class="icon-bar"></span>
         </button>
        
-         <div class="navbar-brand" style="position:absolute">
+         <div class="navbar-brand">
             <form >
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" name="q">
+                    <input type="text" class="form-control" placeholder="Search" name="q" width="200px">
                     <div class="input-group-btn">
                         <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                     </div>
