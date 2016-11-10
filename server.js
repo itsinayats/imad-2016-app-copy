@@ -68,7 +68,7 @@ app.get('/ui/css/style.css', function (req, res) {
 
 
 
-//ARTICLES
+//blog
 app.get('/blog', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/blog', 'blog.html'));
 });
