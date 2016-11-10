@@ -355,7 +355,7 @@ var template= `
 	<div class="row">
 	
 	  <!--left-->
-      <div class="col-md-3" id="leftCol">
+      <div class="col-md-2" id="leftCol">
       <h2>Categories</h2>
         <ul class="nav nav-stacked" id="sidebar">
           <li><a href="#sec0">Section 0</a></li>
@@ -366,7 +366,7 @@ var template= `
         </ul>
       </div><!--/left-->
     
-      <div class="col-sm-9">
+      <div class="col-sm-10">
     
       <h4><small>RECENT POSTS</small></h4>
       <hr>
