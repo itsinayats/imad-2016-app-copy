@@ -361,7 +361,7 @@ var template= `
       <div class="col-md-3" id="leftCol">
       <ul class="nav nav-stacked affix s" style="position:fixed">
       <br>  <br>  <br>  <br>
-      <button class=".btn-info" data-toggle="collapse" data-target="#demo"><h2>Categories</h2></button>
+      <button class=".btn-info" data-toggle="collapse" data-target="#demo">Categories</button>
           <li><a href="#sec0">Section 0</a></li>
           <li><a href="#sec1">Section 1</a></li>
           <li><a href="#sec2">Section 2</a></li>
