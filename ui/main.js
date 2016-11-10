@@ -1,6 +1,11 @@
 console.log('Loaded!');
 
-
+/* activate sidebar */
+$('#sidebar').affix({
+  offset: {
+    top: 235
+  }
+});
 (function($) {
 
   $.fn.visible = function(partial) {
