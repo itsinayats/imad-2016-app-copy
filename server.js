@@ -377,7 +377,7 @@ var template= `
     
       <h4><small>RECENT POSTS</small></h4>
       <hr>
-      <h2>${heading}</h2>
+      <h1>${heading}</h1>
       <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, ${date.toDateString()}.</h5>
       <h5><span class="label label-success">LABEL</span></h5><br>
       <p>${content}</p>
