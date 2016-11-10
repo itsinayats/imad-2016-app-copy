@@ -355,10 +355,10 @@ var template= `
 	<div class="row">
 	
 	<!--left-->
-	<div class="navbar-header" style="position:fixed">
+	<div class="navbar-header">
       <div class="col-md-3" id="leftCol">
       
-        <ul class="nav nav-stacked">
+        <ul class="nav nav-stacked ">
          <h3>CATEGORIES</h3>
           <li><a href="#sec0">Section A</a></li>
           <li><a href="#sec1">Section 1</a></li>
