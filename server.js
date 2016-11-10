@@ -310,6 +310,9 @@ var template= `
       top: 0;
       width: 100%;
   }
+  .affix .s {
+     width:20%; 
+  }
 
  .affix + .container-fluid {
       padding-top: 70px;
