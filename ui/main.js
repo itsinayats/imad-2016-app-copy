@@ -1,10 +1,5 @@
 console.log('Loaded!');
 
-$('#sidebar').affix({
-  offset: {
-    top: 50
-  }
-});
 
 
 (function($) {
