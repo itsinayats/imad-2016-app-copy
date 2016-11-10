@@ -321,7 +321,6 @@ var template= `
 
   		#leftCol{
   		    
-  		    text-align:center;
   		    z-index:1;
   
   		}
