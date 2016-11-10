@@ -309,6 +309,9 @@ var template= `
  .affix + .container-fluid {
       padding-top: 70px;
   }
+  .bold{
+      font-weight:bolder;
+  }
 </style>
 </head>
 <body>
