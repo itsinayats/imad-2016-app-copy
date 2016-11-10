@@ -372,7 +372,7 @@ var template= `
    <div class="container-fluid">
 	<div class="row">
 	<!--left-->
-      <div class="col-md-2" id="leftCol">
+      <div class="col-md-3" id="leftCol">
       <h3>CATEGORIES</h3>
         <ul class="nav nav-stacked" id="sidebar">
           <li><a href="#sec0">Section A</a></li>
