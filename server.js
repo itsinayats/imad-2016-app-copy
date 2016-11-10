@@ -325,8 +325,8 @@ var template= `
             <span class="icon-bar"></span>
         </button>
        
-         <div class="navbar-brand">
-            <form role="search">
+         <div class="navbar-brand" style="position:absolute">
+            <form >
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" name="q">
                     <div class="input-group-btn">
