@@ -322,6 +322,7 @@ var template= `
   		#leftCol{
   		    padding-top:20px;
   		    text-align:center;
+  		    z-index:1;
   
   		}
   .affix {
