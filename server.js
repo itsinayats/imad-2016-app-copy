@@ -301,7 +301,7 @@ var template= `
  
   		<style>
   		#leftCol{
-  		    background-color:red;
+  		    background:red;
   		}
   .affix {
       top: 0;
