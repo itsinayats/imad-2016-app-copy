@@ -345,18 +345,8 @@ var template= `
     </div>
 </nav>
   <!--NAVBAR ENDS  -->
-<div class="container-fluid" style="margin-top:100px;">
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <h3>Categotries</h3>
-      <ul class="nav nav-pills nav-stacked" id="sidebar">
-        <li><a href="#section2">Friends</a></li>
-        <li><a href="#section3">Family</a></li>
-        <li><a href="#section3">Photos</a></li>
-      </ul><br>
-    </div>
 
-    <div class="col-sm-9">
+      <div class="col-sm-9">
     
       <h4><small>RECENT POSTS</small></h4>
       <hr>
