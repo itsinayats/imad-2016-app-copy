@@ -300,6 +300,9 @@ var template= `
   <link rel="stylesheet" href="ui/style.css">
  
   		<style>
+  		#leftcol{
+  		    background:red;
+  		}
   .affix {
       top: 0;
       width: 100%;
@@ -347,6 +350,7 @@ var template= `
   <!--NAVBAR ENDS  -->
    <div class="container">
 	<div class="row">
+	
       <!--left-->
       <div class="col-md-3" id="leftCol">
         <ul class="nav nav-stacked" id="sidebar">
