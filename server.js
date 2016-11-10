@@ -318,12 +318,6 @@ var template= `
       font-weight:bolder;
   }
 </style>
-<script>
-$('#sidebar').affix({
-  offset: {
-    top: 235
-  }
-</script>
 </head>
 <body>
  <!--NAVBAR STARTS  -->
