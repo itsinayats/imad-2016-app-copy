@@ -7,7 +7,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-
+//DATABASE CONFIGURATION
 var config = {
   host: 'db.imad.hasura-app.io',
   user: 'itsinayats',
@@ -16,16 +16,13 @@ var config = {
   port:'5432'
 };
 
-
-
-
-
+//INDEX PAGE
 app.get('/', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 
-
+//CONNECTION CREATION
 var pool=new Pool(config);
 app.get('/test-db', function (req, res) {
     pool.query('select * from article',function(err,result){
@@ -44,18 +41,7 @@ app.get('/test-db', function (req, res) {
 
 
 
-
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
-
-app.get('/fevicon.ico', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'favicon.ico'));
-});
-app.get('/ui/css/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-
+//BOOTSTRAP FILES INCLUDES
 app.get('/ui/css/bootstrap.min.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css', 'bootstrap.min.css'));  //bootstrap  to test
 });
@@ -67,11 +53,34 @@ app.get('/ui/css/bootstrap.css', function (req, res) {
 app.get('/ui/js/bootstrap.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/js', 'bootstrap.min.js'));  //bootstrap
 });
-
-
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+//main.js
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+//favicon
+app.get('/fevicon.ico', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'favicon.ico'));
+});
+//style
+app.get('/ui/css/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+
+
+//ARTICLES
+app.get('/blog', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/blog', 'blog.html'));
+});
+
+
+
+
+
+
+
+
+//images
 
 app.get('/ui/images/inayat.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'inayat.jpg'));
@@ -107,19 +116,18 @@ app.get('/ui/images/school.png', function (req, res) {
 app.get('/ui/images/college.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'college.png'));
 });
-app.get('/ui/images/fb.PNG', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'fb.PNG'));
+app.get('/ui/images/fb.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'fb.png'));
 });
-app.get('/ui/images/gp.PNG', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'gp.PNG'));
+app.get('/ui/images/gp.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'gp.png'));
 });
-app.get('/ui/images/lkn.PNG', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'lkn.PNG'));
+app.get('/ui/images/lkn.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'lkn.png'));
 });
-app.get('/ui/images/twitter.PNG', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'twitter.PNG'));
+app.get('/ui/images/twitter.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'twitter.png'));
 });
-
 
 app.get('/ui/images/a.gif',function(req,res){
 res.sendFile(path.join(__dirname, 'ui/images' , 'a.gif'))
@@ -131,12 +139,8 @@ app.get('/ui/images/gl.jpg',function(req,res){
 res.sendFile(path.join(__dirname, 'ui/images' , 'gl.jpg'))
 });
 
-app.get('/ui/login.php', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'login.php'));
-});
 
-
-
+//counter
 var counter=0;
 app.get('/counter',function(req, res){
 counter = counter + 1;
@@ -144,8 +148,7 @@ res.send(counter.toString());
 
 });
 
-
- //CODE FOR GETTING VALUES
+ //CODE FOR GETTING names
 var names=[];
 //app.get('/submit_name/:name',function(req,res){
 app.get('/submit_name',function(req,res){
@@ -159,6 +162,7 @@ res.send(JSON.stringify(names));
 
 
 
+//articles
 
 app.get('/articles/:articleName', function (req, res) {
 // var articleName=req.params.articleName;
@@ -182,7 +186,7 @@ pool.query("Select * from article where title='" + req.params.articleName + "'",
 
 
  
-/* CREATING TEMPLATE*/
+/* CONTENTS ARTICLES*/
 
 //ARTICLE 1
 var articles={
@@ -278,6 +282,7 @@ var articles={
 };
 
 //TEMPLATE CODE
+
 function createTemplate(data){
 var title=data.title;
 var date=data.date;
