@@ -350,9 +350,9 @@ var template= `
         <li><a href="#section3">Family</a></li>
         <li><a href="#section3">Photos</a></li>
       </ul><br>
-      <div class="input-group">
+      <div class="input-group" style="z-index:1 ">
         <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn" style="z-index:1">
+        <span class="input-group-btn">
           <button class="btn btn-default" type="button" >
             <span class="glyphicon glyphicon-search"></span>
           </button>
