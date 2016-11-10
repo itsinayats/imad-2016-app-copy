@@ -351,12 +351,12 @@ var template= `
     </div>
 </nav>
   <!--NAVBAR ENDS  -->
+  
    <div class="container-fluid">
 	<div class="row">
 	  <!--left-->
-      <div class="col-md-2" id="leftCol" style="margin-top:50px">
-     
-        <ul class="nav nav-stacked" id="sidebar">
+      <div class="col-md-2" id="leftCol">
+      <ul class="nav nav-stacked" id="sidebar" style="">
         <li> <h2>Categories</h2></li>
           <li><a href="#sec0">Section 0</a></li>
           <li><a href="#sec1">Section 1</a></li>
