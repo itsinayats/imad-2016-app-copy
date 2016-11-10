@@ -281,7 +281,7 @@ var template= `
     
       <h4><small>RECENT POSTS</small></h4>
       <hr>
-      <h1>${heading.toupper()}</h1>
+      <h1>${heading.toUpperCase()}</h1>
        <h4><span class="label label-info">${category}</span></h4><br>
       <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, ${date.toDateString()}.</h5>
       <h5><span class="label label-success">LABEL</span></h5><br>
