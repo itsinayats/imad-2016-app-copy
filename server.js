@@ -107,17 +107,17 @@ app.get('/ui/images/school.png', function (req, res) {
 app.get('/ui/images/college.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'college.png'));
 });
-app.get('/ui/images/fb.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'fb.png'));
+app.get('/ui/images/fb.PNG', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'fb.PNG'));
 });
-app.get('/ui/images/gp.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'gp.png'));
+app.get('/ui/images/gp.PNG', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'gp.PNG'));
 });
-app.get('/ui/images/lkn.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'lkn.png'));
+app.get('/ui/images/lkn.PNG', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'lkn.PNG'));
 });
-app.get('/ui/images/twitter.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'twitter.png'));
+app.get('/ui/images/twitter.PNG', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'twitter.PNG'));
 });
 
 
