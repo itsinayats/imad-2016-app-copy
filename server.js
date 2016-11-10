@@ -350,7 +350,7 @@ var template= `
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <h3>Categotries</h3>
-      <ul class="nav nav-pills nav-stacked">
+      <ul class="nav nav-pills nav-stacked" id="sidebar">
         <li><a href="#section2">Friends</a></li>
         <li><a href="#section3">Family</a></li>
         <li><a href="#section3">Photos</a></li>
