@@ -353,9 +353,8 @@ var template= `
   <!--NAVBAR ENDS  -->
    <div class="container-fluid">
 	<div class="row">
-	
 	  <!--left-->
-      <div class="col-md-2" id="leftCol">
+      <div class="col-md-2" id="leftCol" style="margin-top:50px">
      
         <ul class="nav nav-stacked" id="sidebar">
          <h2>Categories</h2>
