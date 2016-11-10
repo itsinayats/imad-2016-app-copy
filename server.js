@@ -348,7 +348,7 @@ var template= `
     </div>
 </nav>
   <!--NAVBAR ENDS  -->
-   <div class="container">
+   <div class="container-fluid">
 	<div class="row">
 	
       <!--left-->
