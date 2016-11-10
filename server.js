@@ -324,8 +324,7 @@ var template= `
                            <span class="icon-bar"></span>
                            <span class="icon-bar"></span>
                       </button>
-            <a href="/" class="navbar-brand">INAYAT HUSSAIN</a> 
-            <div class="input-group">
+            <div class="input-group navbar-brand">
         <input type="text" class="form-control" placeholder="Search Blog..">
         <span class="input-group-btn">
           <button class="btn btn-default" type="button" >
