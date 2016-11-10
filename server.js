@@ -324,7 +324,7 @@ var template= `
                            <span class="icon-bar"></span>
                            <span class="icon-bar"></span>
                       </button>
-            <div class="input-group navbar-brand">
+        <div class="input-group navbar-brand" style="position:absolute">
         <input type="text" class="form-control" placeholder="Search Blog..">
         <span class="input-group-btn">
           <button class="btn btn-default" type="button" >
