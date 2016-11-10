@@ -300,6 +300,25 @@ var template= `
   <link rel="stylesheet" href="ui/style.css">
  
   		<style>
+  		@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:30px;
+  	width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  border:0 #eee solid;
+  border-right-width:5px;
+}
+
   		#leftCol{
   		    padding-top:20px;
   		    text-align:center;
