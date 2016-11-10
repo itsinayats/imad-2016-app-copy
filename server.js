@@ -304,6 +304,7 @@ var template= `
   		    background:gray;
   		    padding-top:20px;
   		    text-align:center;
+  		    height:800px;
   		}
   .affix {
       top: 0;
