@@ -363,7 +363,7 @@ var template= `
       <br>  <br><br>
       <button class=" btn btn-lg btn-info" data-toggle="collapse" data-target="#cat" style="width:330px;text-align:center;">Categories</button>
       <div id="cat" class="collapse" style="background:blue;z-index:1">
-          <li><a href="#sec0">Section 0</a></li>
+       <button class=" btn btn-sm btn-info" data-toggle="collapse" data-target="#cat" style="width:330px;text-align:center;">Categories</button>
           <li><a href="#sec1">Section 1</a></li>
           <li><a href="#sec2">Section 2</a></li>
           <li><a href="#sec3">Section 3</a></li>
