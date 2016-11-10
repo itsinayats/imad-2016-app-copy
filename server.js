@@ -360,10 +360,14 @@ var template= `
 	  <!--left-->
       <div class="col-md-3" id="leftCol">
       <div class="nav nav-stacked affix s" style="position:fixed">
-      <br>  <br><br>
+      <br><br><br>
       <button class=" btn btn-lg btn-info" data-toggle="collapse" data-target="#cat" style="width:330px;text-align:center;">Categories</button>
-      <div id="cat" class="collapse" style="background:blue;z-index:1">
-       <button class=" btn btn-sm btn-info" style="width:330px;text-align:center;">Categories</button>
+      <div id="cat" class="collapse"z-index:1">
+      <ul class="list-group">
+  <li class="list-group-item">New <span class="badge">12</span></li>
+  <li class="list-group-item">Deleted <span class="badge">5</span></li> 
+  <li class="list-group-item">Warnings <span class="badge">3</span></li> 
+       </ul>
          
         </div>
         </div>
