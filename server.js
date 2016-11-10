@@ -301,10 +301,9 @@ var template= `
  
   		<style>
   		#leftCol{
-  		    background:gray;
   		    padding-top:20px;
   		    text-align:center;
-  		    height:800px;
+  
   		}
   .affix {
       top: 0;
@@ -354,7 +353,7 @@ var template= `
    <div class="container-fluid">
 	<div class="row">
 	<!--left-->
-      <div class="col-md-2" id="leftCol" height="800px">
+      <div class="col-md-2" id="leftCol">
       <h3>CATEGORIES</h3>
         <ul class="nav nav-stacked" id="sidebar">
           <li><a href="#sec0">Section 0</a></li>
