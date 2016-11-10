@@ -324,7 +324,15 @@ var template= `
                            <span class="icon-bar"></span>
                            <span class="icon-bar"></span>
                       </button>
-            <a href="/" class="navbar-brand">INAYAT HUSSAIN</a>
+            <a href="/" class="navbar-brand">INAYAT HUSSAIN</a> 
+            <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button" >
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
 
                             <div class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
@@ -350,14 +358,6 @@ var template= `
         <li><a href="#section3">Family</a></li>
         <li><a href="#section3">Photos</a></li>
       </ul><br>
-      <div class="input-group" style="z-index:1 ">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button" >
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
     </div>
 
     <div class="col-sm-9">
