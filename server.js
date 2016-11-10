@@ -62,7 +62,7 @@ app.get('/fevicon.ico', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'favicon.ico'));
 });
 //style
-app.get('/ui/css/style.css', function (req, res) {
+app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
