@@ -316,7 +316,7 @@ var template= `
 </head>
 <body>
  <!--NAVBAR STARTS  -->
-       <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100" style="z-index:1">
+       <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="0" style="z-index:1">
             <div class="container-fluid">
                      <button type="button" class="navbar-toggle"  data-toggle="collapse"  data-target=".navbar-collapse">
                           <span class="sr-only">Toggle Navigation</span>
