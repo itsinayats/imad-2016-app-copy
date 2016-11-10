@@ -360,7 +360,7 @@ var template= `
 	  <!--left-->
       <div class="col-md-3" id="leftCol">
       <ul class="nav nav-stacked affix s" style="position:fixed">
-      <br>  <br>
+      <br>  <br><br>
       <button class="btn btn-lg" data-toggle="collapse" data-target="#cat">Categories</button>
       <div id="cat" class="collapse">
           <li><a href="#sec0">Section 0</a></li>
