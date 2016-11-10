@@ -3,7 +3,7 @@ console.log('Loaded!');
 /* activate sidebar */
 $('#sidebar').affix({
   offset: {
-    top: 235
+    top: 10
   }
 });
 (function($) {
