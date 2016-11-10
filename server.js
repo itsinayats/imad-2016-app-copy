@@ -302,6 +302,8 @@ var template= `
   		<style>
   		#leftCol{
   		    background:#eeeeee grey lighten-3;
+  		    padding:20px;
+  		    text-align:center;
   		}
   .affix {
       top: 0;
