@@ -324,7 +324,7 @@ var template= `
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-       <a href="#" class="navbar-brand bold active">Inayat's Blog</a>
+       <a href="#" class="navbar-brand active">Inayat's Blog</a>
        
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
