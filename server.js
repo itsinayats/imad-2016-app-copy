@@ -301,7 +301,7 @@ var template= `
  
   		<style>
   		#leftCol{
-  		    background:#eeeeee grey lighten-3;
+  		    background:gray;
   		    padding-top:20px;
   		    text-align:center;
   		}
