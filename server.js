@@ -300,7 +300,7 @@ var template= `
   <link rel="stylesheet" href="ui/style.css">
  
   		<style>
-  		#leftcol{
+  		#leftCol{
   		    background-color:red;
   		}
   .affix {
