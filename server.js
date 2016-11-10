@@ -373,7 +373,7 @@ var template= `
 	<div class="row">
 	<!--left-->
       <div class="col-md-3" id="leftCol">
-     
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav nav-stacked" id="sidebar">
          <h3>CATEGORIES</h3>
           <li><a href="#sec0">Section A</a></li>
@@ -382,6 +382,7 @@ var template= `
           <li><a href="#sec3">Section 3</a></li>
           <li><a href="#sec4">Section 4</a></li>
         </ul>
+    </div>
     </div><!--/left-->
     
       <div class="col-sm-9">
