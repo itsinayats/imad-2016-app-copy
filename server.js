@@ -376,7 +376,7 @@ var template= `
 	<div class="navbar-header">
       <div class="col-md-3" id="leftCol">
       
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse">
         <ul class="nav nav-stacked" id="sidebar">
          <h3>CATEGORIES</h3>
           <li><a href="#sec0">Section A</a></li>
