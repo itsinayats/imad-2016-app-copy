@@ -353,7 +353,7 @@ var template= `
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search Blog..">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
+          <button class="btn btn-default" type="button" style="z-index:1">
             <span class="glyphicon glyphicon-search"></span>
           </button>
         </span>
@@ -371,6 +371,7 @@ var template= `
       <hr>
 
       <h4>Leave a Comment:</h4>
+      
       <form role="form">
         <div class="form-group">
           <textarea class="form-control" rows="3" required></textarea>
