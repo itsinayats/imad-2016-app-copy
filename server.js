@@ -310,7 +310,7 @@ var template= `
       top: 0;
       width: 100%;
   }
-  .affix .s {
+  .s {
      width:20%; 
   }
 
