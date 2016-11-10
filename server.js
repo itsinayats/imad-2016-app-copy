@@ -345,8 +345,7 @@ var template= `
     </div>
 </nav>
   <!--NAVBAR ENDS  -->
-<br><br><br><br>
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top:100px;">
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <h3>Categotries</h3>
