@@ -193,6 +193,7 @@ var date=data.date;
 var heading=data.heading;
 var content=data.content;
 var category=data.category;
+var author=data.name;
 var template= `
 <!DOCTYPE html>
 <html lang="en">
@@ -283,7 +284,7 @@ var template= `
       <hr>
       <h1>${heading.toUpperCase()}</h1>
        <h4><span class="label label-info">${category}</span></h4>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, ${date.toDateString()}.</h5>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by ${author}, ${date.toDateString()}.</h5>
       <h5><span class="label label-success">LABEL</span></h5><br>
       <p>${content}</p>
       <hr>
