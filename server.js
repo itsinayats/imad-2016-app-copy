@@ -319,7 +319,7 @@ var template= `
   border-right-width:5px;
 }
 
-  		#sidebar{
+  		#leftCol{
   		    
   		    text-align:center;
   		    z-index:1;
@@ -340,7 +340,7 @@ var template= `
 </head>
 <body>
  <!--NAVBAR STARTS  -->
-    <nav class="navbar navbar-inverse" role="navigation" data-spy="affix" style="z-index:1">
+    <nav class="navbar navbar-inverse" role="navigation" data-spy="affix" style="z-index:2">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
