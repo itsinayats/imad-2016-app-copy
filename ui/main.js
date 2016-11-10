@@ -1,5 +1,10 @@
 console.log('Loaded!');
 
+$('#sidebar').affix({
+  offset: {
+    top: 235
+  }
+});
 
 
 (function($) {
