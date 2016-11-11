@@ -176,7 +176,7 @@ pool.query("Select * from articles,users where title='" + req.params.articleName
                 res.status(400).send('ARTICLE NOT FOUND');
              }
                  else{
-                  var  articleData=result.rows[0];
+                  var  articleData=result.rows[1];
                   res.send(createTemplate(articleData));
                      }
              }
