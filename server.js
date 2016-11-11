@@ -193,7 +193,7 @@ pool.query("select article_tags.tag,articles.title,articles.content,articles.cat
 //TEMPLATE CODE
 
 function createTemplate(data){
-var title=data.title;
+//var title=data.title;
 var date=data.date;
 var heading=data.heading;
 var content=data.content;
